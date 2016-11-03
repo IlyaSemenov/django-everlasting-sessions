@@ -1,10 +1,6 @@
-# coding=utf-8
-from distutils.core import setup
+"""Django middleware that prevents user sessions from expiration."""
 from setuptools import setup, find_packages
 
-"""
-Django middleware that prevents user sessions from expiration.
-"""
 
 setup(
 	name='django-everlasting-sessions',
@@ -13,8 +9,8 @@ setup(
 	license='BSD',
 	author='Ilya Semenov',
 	author_email='ilya@semenov.co',
-	description='Django middleware that prevents user sessions from expiration.',
-	long_description=__doc__,
+	description=__doc__,
+	long_description=open('README.rst').read(),
 	packages=find_packages(),
         include_package_data=True,
 	zip_safe=False,
